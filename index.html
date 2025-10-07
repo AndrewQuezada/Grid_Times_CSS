@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Times</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caramel&family=DM+Serif+Text:ital@0;1&family=DynaPuff:wght@400..700&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(236, 236, 236);
+        }
+        .container {
+        width: 1200px;
+        margin: 10px auto;
+        justify-content: center;
+        display: grid;
+        gap: 20px;
+        padding: 20px;
+        background-color:rgb(255, 255, 255);
+        grid-template-columns: repeat(12, 100px);
+        grid-template-rows: repeat(11, 100px);
+        font-family: serif, system-ui;
+    }
+    .header {
+        font-size: 50px;
+        margin-left: 450px;
+        margin-top: 40px;
+    }
+    .header2 {
+        font-size: 10px;
+        margin-left: 520px;
+        margin-top: 20px;
+        color: rgb(124, 124, 124);
+    }
+    .start {
+        background-color: white;
+        width: 1200px;
+        margin-left: 160px;
+        margin-bottom: -10px;
+    }
+    .space {
+        border-bottom: solid 2px black;
+        width: 1060px;
+        margin-left: 70px;
+        margin-top: 20px;
+    }
+    .pic1 {
+        grid-area: 1/2/4/8;
+    }
+    .pic1 img{
+        object-fit:cover;
+        height:400px;
+    }
+    .pic2 {
+        grid-area: 1/8/4/11;
+        background-color: rgb(225, 225, 225);
+        height:400px;
+       
+    }
+    .text1 {
+        font-size: 25px;
+        border-bottom: 2px solid black;
+        padding-left: 10px;
+         margin-bottom:10px;
+    }
+    .text2 {
+        font-size: 18px;
+        border-bottom: 2px solid rgba(129, 129, 129, 0.421);
+        padding-left: 10px;
+        padding: 10px;
+        margin-bottom:10px;
+     
+    }
+    .pic3 {
+        grid-area: 5/8/7/11;
+        background-color: rgb(56, 56, 56);      
+    }
+    .text3 {
+        color: white;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .text4 {
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+    }
+    .pic4 {
+        grid-area: 5/2/7/8;
+    }
+    .text5 {
+        font-size: 30px;
+    }
+    .text6 {
+        font-size: 20px;
+        padding-top: 10px;
+        color: grey
+    }
+    .pic5 {
+        width: 100%;
+        height: 100%;
+        grid-area: 7/2/9/5;
+    }
+    .img1, .img3 ,.img2, .img4{
+         width: 100%;
+        height: 100%;
+    }
+    img{
+         width: 100%;
+        height: 100%;
+    }
+    .pic6 {
+        grid-area: 7/5/9/8;
+    }
+    .pic7 {
+        grid-area: 7/8/9/11;
+    }
+    .text7 {
+        font-size: 30px;
+    }
+    .pic8 {
+        grid-area: 10/2/12/7;
+    }
+    .pic9 {
+        grid-area: 10/12/22/7;
+        background-color: rgb(255, 198, 198);
+        height:400px;
+        font-size: 30px;
+        padding: 30px;
+        font-style: italic;
+    }
+    .text9 {
+        margin-left: 170px;
+        margin-top: 20px;
+    }
+    .text8 {
+        color: grey;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="body">
+    <header class="start"> 
+        <div class="header"> The Grid Times</div>
+        <h2 class="header2">VOLUME 1 &bull; ISSUE 42 &bull; SEPTEMBER</h2>
+        <h1 class="space"> </h1>
+    </header>
+    <div class="container">
+        <div class="pic1"> <img src="Images\img-1.jpg" alt="img-1"> </div>
+        <div class="pic2">
+                <div class="text1"> In This Issue</div>
+                <div class="text2"> Grid Systems Explained</div>
+                <div class="text2"> Typography Trends 2025</div>
+                <div class="text2"> Color Theory Basics</div>
+                <div class="text2"> Layout Best Practices</div>
+        </div>
+
+
+        <div class="pic3">
+            <div class="text3">Editor's Note </div> 
+            <div class="text4">Welcome to another exciting issue exploring the intersection of design and technology. This mouth, we focus on the power of CSS Grid. </div>
+        </div>
+        <div class="pic4">
+            <div class="text5"> The Art of Modern Design: Embracing Simplicity</div> 
+            <div class="text6"> In an era of complexity, designers are returning to fundamentals. Grid systems ptovide structure while allowing creativity to flourish. This renaissance of minimalism proves that less is indeed more when it comes to effective visual communication. </div>
+        </div>
+        <div class="pic5">
+            <div class="img1"> <img src="Images\img-2.jpg" alt="img-2"> </div>
+            <div class="text7"> Typography Matters </div>
+            <div class="text8">Good Typography is invisble. Great Typography is unfogetable. Learn how to use it here. </div>
+
+        </div>
+        <div class="pic6">
+            <div class="img2"> <img src="Images\img-3.jpg" alt="img-3"> </div>
+            <div class="text7">Color Psychology </div>
+            <div class="text8"> Color evoke and drive decisions. Discover how to use color theory here.</div>
+        </div>
+        <div class="pic7">
+            <div class="img3"> <img src="Images\img-4.png" alt="img-4"> </div>
+            <div class="text7">Workspace Setup </div>
+            <div class="text8">A well-oragnized Workspace helps boost creativity. </div>
+        </div>
+        <div class="pic8"> 
+        <div class="img4"> <img src="Images\img-5.png" alt="img5" > </div>
+        <div class="text7">The Future of Web Design </div>
+        <div class="text8">As we move on web design will evole CSS Grid has changed how we use layouts, making responsive designs better than ever! </div>
+        </div>
+        <div class="pic9"> "Design is not just what it looks like and feels like. Disign is how it works." 
+            <div class=text9 > -Steve Jobs</div>
+        </div>
+        
+
+    </div>
+    </div>
+</body>
+</html>
